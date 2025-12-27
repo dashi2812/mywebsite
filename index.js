@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
 function sendForm(formData) {
-  return fetch("https://server-ix74.onrender.com/submit", {
+  return fetch("https://server-supabase-abvw.onrender.com/submit", {
     method: "POST",
     body: formData,
   })
@@ -53,7 +53,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
 // Ping function
 function pingRender() {
-  fetch("https://server-ix74.onrender.com/timer")
+  fetch("https://https://server-supabase-abvw.onrender.com/submit")
     .then(res => console.log("Time:", res.status))
     .catch(err => console.error("Time:", err));
 }
@@ -62,4 +62,5 @@ function pingRender() {
 pingRender();
 
 // Then run every 10 minutes (300000 ms)
-setInterval(pingRender, 600000);
+setInterval(pingRender, 700000);
+
