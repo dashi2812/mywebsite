@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
 function sendForm(formData) {
-  return fetch("https://server-supabase-abvw.onrender.com/submit", {
+  return fetch("https://api.mysqft.in/submit", {
     method: "POST",
     body: formData,
   })
@@ -26,7 +26,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   const formData = new FormData(this);
   const button = document.getElementById("submitBtn");
 
-  // Change button state
+  // Change button states
   button.innerText = "Sending...";
   button.disabled = true;
 
@@ -52,15 +52,15 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 
 
 // Ping function
-function pingRender() {
-  fetch("https://https://server-supabase-abvw.onrender.com/submit")
+function timer() {
+  fetch("https://api.mysqft.in/submit")
     .then(res => console.log("Time:", res.status))
     .catch(err => console.error("Time:", err));
 }
 
 // Run immediately once
-pingRender();
+timer();
 
 // Then run every 10 minutes (300000 ms)
-setInterval(pingRender, 700000);
+setInterval(timer, 700000);
 
