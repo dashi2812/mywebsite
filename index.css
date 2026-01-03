@@ -222,6 +222,12 @@ footer {
     margin-top: 40px;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px #000000ff inset !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
 /* ANIMATIONS */
 .animate-up {
     animation: moveUp 1s ease-in-out;
@@ -274,11 +280,37 @@ p{
     line-height:1.6;
 }
 
-.dbtn{
+.dbtn0{
+    color:white;
+    margin-left:10px;
+}
+
+.dbtn1{
+    background-color:orange;
+    color:white;
+    margin-left:10px;
+}
+.dbtn2{
     background-color:blue;
     color:white;
     margin-left:10px;
 }
+.dbtn3{
+    background-color:gold;
+    color:white;
+    margin-left:10px;
+}
+.dbtn4{
+    background-color:gold;
+    color:black;
+    margin-left:10px;
+}
+.dbtn5{
+    background-color:DodgerBlue;
+    color:white;
+    margin-left:10px;
+}
+
 
 
 
