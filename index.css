@@ -286,8 +286,8 @@ p{
 }
 
 .dbtn1{
-    background-color:orange;
-    color:white;
+    background-color:white;
+    color:black;
     margin-left:10px;
 }
 .dbtn2{
@@ -296,8 +296,8 @@ p{
     margin-left:10px;
 }
 .dbtn3{
-    background-color:gold;
-    color:white;
+    background-color:blue;
+    color:black;
     margin-left:10px;
 }
 .dbtn4{
@@ -310,6 +310,9 @@ p{
     color:white;
     margin-left:10px;
 }
+
+
+
 
 
 
@@ -472,3 +475,4 @@ html {
         padding: 15px;
     }
 }
+
