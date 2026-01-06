@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
 function sendForm(formData) {
-  return fetch("https://api.mysqft.in/submit", {
+  return fetch("https://api.v1.mysqft.in/submit", {
     method: "POST",
     body: formData,
   })
@@ -51,16 +51,4 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
 });
 
 
-// Ping function
-function timer() {
-  fetch("https://api.mysqft.in/submit")
-    .then(res => console.log("Time:", res.status))
-    .catch(err => console.error("Time:", err));
-}
-
-// Run immediately once
-timer();
-
-// Then run every 10 minutes (300000 ms)
-setInterval(timer, 700000);
 
