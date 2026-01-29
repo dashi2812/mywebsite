@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
 function sendForm(formData) {
-  return fetch("https://api.v1.mysqft.in/submit", {
+  return fetch("https://api.mysqft.in/submit", {
     method: "POST",
     body: formData,
   })
@@ -49,6 +49,7 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       }, 1500);
     });
 });
+
 
 
 
