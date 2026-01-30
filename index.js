@@ -50,6 +50,17 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
     });
 });
 
+// for fast load 
+
+window.addEventListener("DOMContentLoaded", () => {
+  fetch("https://api.mysqft.in/submit", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({}) // empty body or default values
+  }).catch(() => {
+    // ignore errors
+  });
+});
 
 
 
