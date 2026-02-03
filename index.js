@@ -7,7 +7,7 @@ function toggleMenu() {
 
 
 function sendForm(formData) {
-  return fetch("https://api.mysqft.in/submit", {
+  return fetch("https://api.discord.mysqft.in", {
     method: "POST",
     body: formData,
   })
@@ -46,21 +46,22 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
       setTimeout(() => {
         button.innerText = "Send";
         button.disabled = false;
-      }, 1500);
+      }, 2000);
     });
 });
 
 // for fast load 
 
-window.addEventListener("DOMContentLoaded", () => {
-  fetch("https://api.mysqft.in/submit", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({}) // empty body or default values
-  }).catch(() => {
-    // ignore errors
-  });
-});
+// window.addEventListener("DOMContentLoaded", () => {
+//   fetch("https://api.mysqft.in/submit", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify({}) // empty body or default values
+//   }).catch(() => {
+//     // ignore errors
+//   });
+// });
+
 
 
 
